@@ -17,11 +17,25 @@ defmodule LanguageList do
     head
   end
 
+
+  def count([]) do
+    0
+  end
+
   def count(list) do
-    Enum.count(list)
+    count(remove(list)) + 1
+  end
+
+  def functional_list?([]) do
+    false
   end
 
   def functional_list?(list) do
-    Enum.member?(list, "Elixir")
+    [head | tail] = list
+
+    case head do
+      "Elixir" -> true
+      _ -> functional_list?(tail)
+    end
   end
 end
