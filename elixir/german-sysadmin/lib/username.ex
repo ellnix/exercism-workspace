@@ -10,13 +10,9 @@ defmodule Username do
       ?ö -> ~c"oe"
       ?ü -> ~c"ue"
       ?ß -> ~c"ss"
-      _ -> false
+      _ -> []
     end
 
-    if sanitized do
-      sanitized ++ sanitize(rest)
-    else
-      sanitize(rest)
-    end
+    sanitized ++ sanitize(rest)
   end
 end
