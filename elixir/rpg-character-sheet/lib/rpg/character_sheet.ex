@@ -23,7 +23,6 @@ defmodule RPG.CharacterSheet do
       level: ask_level(),
     }
 
-    IO.write "Your character: "
-    IO.inspect character
+    IO.inspect character, label: "Your character"
   end
 end
