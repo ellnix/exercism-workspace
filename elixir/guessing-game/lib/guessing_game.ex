@@ -7,10 +7,10 @@
 # | When a guess isn't made                                       | "Make a guess" |
 
 defmodule GuessingGame do
+  def compare(secret_number, guess \\ nil)
   def compare(_secret_number, guess) when not is_integer(guess), do: "Make a guess"
   def compare(secret_number, guess) when secret_number == guess, do: "Correct"
   def compare(secret_number, guess) when abs(secret_number - guess) < 2, do: "So close"
   def compare(secret_number, guess) when secret_number > guess, do: "Too low"
   def compare(secret_number, guess) when secret_number < guess, do: "Too high"
-  def compare(_secret_number), do: "Make a guess"
 end
