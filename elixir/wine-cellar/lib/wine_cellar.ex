@@ -13,22 +13,11 @@ defmodule WineCellar do
     ]
   end
 
-  defp _filter_by_color([], _color), do: []
-  defp _filter_by_color(cellar, color) do
-    [{wine_color, wine} | rest_of_cellar] = cellar 
-
-    if wine_color == color do
-      [wine | _filter_by_color(rest_of_cellar, color)]
-    else
-      _filter_by_color(rest_of_cellar, color)
-    end
-  end
-
   def filter(cellar, color, opts \\ []) do
     year = Keyword.get(opts, :year)
     country = Keyword.get(opts, :country)
 
-    cellar = _filter_by_color(cellar, color)
+    cellar = Keyword.get_values(cellar, color)
     cellar = if year do filter_by_year(cellar, year) else cellar end
     if country do filter_by_country(cellar, country) else cellar end
   end
