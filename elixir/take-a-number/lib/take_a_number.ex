@@ -1,18 +1,18 @@
 defmodule TakeANumber do
   def start() do
-    spawn(fn -> send_next_number() end)
+    spawn(&take_a_number/0)
   end
 
-  defp send_next_number(counter \\ 1) do
+  defp take_a_number(counter \\ 1) do
     receive do
       {:report_state, pid} ->
         send(pid, counter - 1)
-        send_next_number(counter)
+        take_a_number(counter)
       {:take_a_number, pid} ->
         send(pid, counter)
-        send_next_number(counter + 1)
+        take_a_number(counter + 1)
       :stop -> :nothing
-      _ -> send_next_number(counter)
+      _ -> take_a_number(counter)
     end
   end
 end
