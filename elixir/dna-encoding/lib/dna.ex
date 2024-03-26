@@ -23,7 +23,7 @@ defmodule DNA do
       2 -> ?C
       4 -> ?G
       8 -> ?T
-      0 -> ? 
+      0 -> ?\s
     end
   end
 
@@ -38,12 +38,12 @@ defmodule DNA do
   end
 
   def decode(dna) do
-    Enum.reverse(do_decode(dna, []))
+    do_decode(dna, [])
   end
 
   defp do_decode(<<>>, acc), do: acc
   defp do_decode(<<head::4, rest::bitstring>>, acc) do
     head = decode_nucleotide(head)
-    do_decode(rest, [head | acc])
+    do_decode(rest, acc ++ [head])
   end
 end
