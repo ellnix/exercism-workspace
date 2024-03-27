@@ -8,11 +8,11 @@ defmodule Newsletter do
   end
 
   def open_log(path) do
-    with {:ok, pid} <- File.open(path, [:write]), do: pid
+    File.open!(path, [:write])
   end
 
   def log_sent_email(pid, email) do
-    IO.write(pid, "#{email}\n")
+    IO.puts(pid, email)
   end
 
   def close_log(pid) do
