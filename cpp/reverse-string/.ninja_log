@@ -1,0 +1,25 @@
+# ninja log v5
+6	10623	1712680964544606635	CMakeFiles/reverse-string.dir/test/tests-main.cpp.o	31c7baa123f8ef9
+8	1039	1712681200540232076	CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o	27aabd4d6ffeb107
+8	369	1712681225303297706	CMakeFiles/reverse-string.dir/reverse_string.cpp.o	941085b337acc59b
+369	681	1712681225615298533	reverse-string	3a7bf11518d445ee
+681	685	0	CMakeFiles/test_reverse-string	220cb01e334317ab
+681	685	0	/home/fourhundredlux/Code/github/ellnix/exercism-workspace/cpp/reverse-string/CMakeFiles/test_reverse-string	220cb01e334317ab
+3	350	1712681278897439748	CMakeFiles/reverse-string.dir/reverse_string.cpp.o	941085b337acc59b
+2	1057	1712681279601441614	CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o	27aabd4d6ffeb107
+1057	1345	1712681279892442385	reverse-string	3a7bf11518d445ee
+1345	1349	0	CMakeFiles/test_reverse-string	220cb01e334317ab
+1345	1349	0	/home/fourhundredlux/Code/github/ellnix/exercism-workspace/cpp/reverse-string/CMakeFiles/test_reverse-string	220cb01e334317ab
+3	10	1712681342178607473	CMakeFiles/reverse-string.dir/reverse_string.cpp.o	941085b337acc59b
+3	11	1712681342179607475	CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o	27aabd4d6ffeb107
+11	312	1712681342477608265	reverse-string	3a7bf11518d445ee
+312	316	0	CMakeFiles/test_reverse-string	220cb01e334317ab
+312	316	0	/home/fourhundredlux/Code/github/ellnix/exercism-workspace/cpp/reverse-string/CMakeFiles/test_reverse-string	220cb01e334317ab
+8	327	1712681437262859488	CMakeFiles/reverse-string.dir/reverse_string.cpp.o	941085b337acc59b
+327	636	1712681437572860310	reverse-string	3a7bf11518d445ee
+636	640	0	CMakeFiles/test_reverse-string	220cb01e334317ab
+636	640	0	/home/fourhundredlux/Code/github/ellnix/exercism-workspace/cpp/reverse-string/CMakeFiles/test_reverse-string	220cb01e334317ab
+8	1047	1712681461087922629	CMakeFiles/reverse-string.dir/reverse_string_test.cpp.o	27aabd4d6ffeb107
+1047	1343	1712681461385923419	reverse-string	3a7bf11518d445ee
+1343	1347	0	CMakeFiles/test_reverse-string	220cb01e334317ab
+1343	1347	0	/home/fourhundredlux/Code/github/ellnix/exercism-workspace/cpp/reverse-string/CMakeFiles/test_reverse-string	220cb01e334317ab
