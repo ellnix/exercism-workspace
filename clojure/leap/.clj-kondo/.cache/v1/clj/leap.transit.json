@@ -1,0 +1,1 @@
+["^ ","~$leap-year?",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$leap","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret",["^4",["~:nil","~:boolean"]],"~:arglist-str","[year]"]],"~:type","~:fn"],"~:filename","/home/fourhundredlux/Code/github/ellnix/exercism-workspace/clojure/leap/src/leap.clj"]
