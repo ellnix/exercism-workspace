@@ -1,22 +1,11 @@
 #include "difference_of_squares.h"
 
 unsigned int sum_of_squares(unsigned int number) {
-  unsigned int sum = 0;
-
-  for(unsigned int i = 1; i <= number; i++) {
-    sum += i * i;
-  }
-
-  return sum;
+  return number * (number + 1) * (number * 2 + 1) / 6;
 }
 
 unsigned int square_of_sum(unsigned int number) {
-  unsigned int sum = 0;
-
-  for(unsigned int i = 0; i <= number; i++) {
-    sum += i;
-  }
-
+  unsigned int sum = number * (number + 1) / 2;
   return sum * sum;
 }
 
